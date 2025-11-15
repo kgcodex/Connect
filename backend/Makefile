@@ -14,11 +14,11 @@ venv:
 	source .venv/bin/activate && pip install -r requirements.txt
 
 # Run Django ASGI server
-run:
+run-asgi:
 	uvicorn connect_backend.asgi:application --reload --port 8000
 
 # Run Django development server
-run-dev:
+run:
 	$(MANAGE) runserver
 	
 # Migration 
@@ -28,3 +28,6 @@ migrate:
 
 test:
 	$(MANAGE) test
+
+seed:
+	$(MANAGE) seed_db
