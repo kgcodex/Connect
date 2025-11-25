@@ -19,7 +19,8 @@ run-asgi:
 
 # Run Django development server
 run:
-	$(MANAGE) runserver
+	$(MANAGE) runserver 
+
 	
 # Migration 
 migrate: 
@@ -27,7 +28,13 @@ migrate:
 	$(MANAGE) migrate
 
 test:
-	$(MANAGE) test
+	pytest
+
+cov:
+	pytest --cov=api \
+	       --cov-report=html \
+	       --cov-report=term \
+	       --cov-report=annotate
 
 seed:
 	$(MANAGE) seed_db
