@@ -6,7 +6,7 @@ PYTHON := python
 MANAGE := $(PYTHON) manage.py
 
 # Targets
-.PHONY: run migrate test venv
+.PHONY: run migrate test venv run-asgi
 
 # Create virtual environment and install dependencies
 venv:

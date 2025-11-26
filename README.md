@@ -61,4 +61,67 @@ Connect is a social media platform built with DRF & TS. Fully Responsive and min
 - Follow other Users
 - See Following/ Follower List/Count
 
-### Checkout `/api/v1/docs/` for swagger api docs
+## Endpoints
+
+- Swagger API docs `/api/v1/docs/`
+- Register a user **POST** `/api/v1/register/`
+- Login a user **POST** `/api/v1/login/`
+- Refresh access token **POST** `/api/v1/refresh/`
+- Get your or other User Profile Details **GET** `/api/v1/profile/`
+- Update Profile Details **PATCH** `/api/v1/profile/`
+- Delete your Profile **DELETE** `/api/v1/profile/`
+- Post Feed **GET** `/api/v1/feed/`
+- Search for other user **GET** `/api/v1/search/`
+- Get Comments for a Post **GET** `/api/v1/comments/`
+- Post a Comment on a Post **POST** `/api/v1/comments/`
+- Add a Post **POST** `/api/v1/post/`
+- Delete a Post **DELETE** `/api/v1/post/`
+- Get all Post of a User **GET** `/api/v1/all_posts/`
+- Get following list/count **GET** `/api/v1/following/`
+- Follow a User **POST** `/api/v1/following/`
+- Get Follower list/count **GET** `api/v1/follower/`
+
+* For request/response structure visit api docs or _backend/api/v1/views/_
+
+## Backend Setup
+
+- cd backend/
+- Create .env
+
+  ```
+  DEBUG = "True" | "False"
+  DJANGO_ENV = "dev" | "prod"
+
+  SECRET_KEY
+
+  DEV_DB_NAME
+  PROD_DB_NAME
+
+  DB_USERNAME
+  DB_PASSWORD
+
+  DB_HOST
+  DB_PORT
+
+  ```
+
+- Run `make venv`
+- Then run `make migrate`
+- Then run `make seed` for seeding database with fake users
+- Then run `make run`
+
+## Frontend Setup
+
+- cd frontend/
+- Create .env
+
+  ```
+  VITE_BASE_URL=http://localhost:8000/api/v1/
+
+  VITE_IMAGE_URL=http://localhost:8000
+  ```
+
+  or change according to backend
+
+- Run `npm install`
+- Then `npm run dev`
