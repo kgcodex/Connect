@@ -3,7 +3,7 @@
   Connect.
 </h1>
 
-Connect is a social media platform built with DRF & TS.
+Connect is a social media platform built with DRF & TS. Fully Responsive and minimalistic design.
 
 <p align="center">
   <img src="https://img.shields.io/badge/coverage-85%25-brightgreen?style=for-the-badge" />
