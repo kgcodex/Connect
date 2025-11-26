@@ -23,7 +23,7 @@ Connect is a social media platform built with DRF & TS.
 ## Preview
 
 <div align="center">
-  <img src="Landing.png" alt="preview" style="border-radius: 12px;" />
+  <img src="Preview.gif" width="700" style="border-radius: 12px;" />
 </div>
 
 ## 🚀 Tech Stack
