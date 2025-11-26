@@ -32,7 +32,7 @@ export const UserFeed = () => {
   return (
     <div className="h-screen border-x-4 border-[#19181a] overflow-auto no-scrollbar space-y-5">
       {feed.length === 0 ? (
-        <p>Follow Users to see their posts</p>
+        <p className="text-center m-5 text-2xl font-mono">Follow Users to see their posts</p>
       ) : (
         <>
           {feed.map((post) => (
