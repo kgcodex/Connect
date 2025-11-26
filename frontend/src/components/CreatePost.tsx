@@ -87,9 +87,14 @@ export const CreatePost = () => {
                 onDrop={(e) => handleDrop(e)}
               >
                 <div className="h-[200px] border-2 border-dashed bg-[#141314] rounded-2xl flex justify-center items-center">
-                  <p className="text-2xl font-pixelfont text-center text-gray-300">
-                    Upload an Image
-                  </p>
+                  <div>
+                    <p className="text-2xl font-pixelfont text-center text-gray-300">
+                      Upload an Image
+                    </p>
+                    <p className="text-xl font-pixelfont text-center text-gray-300">
+                      or Drag and Drop
+                    </p>
+                  </div>
                 </div>
                 <input
                   type="file"
