@@ -1,3 +1,6 @@
+# Backend File Structure
+
+```
 backend/
 ├── api/
 │   ├── admin.py
@@ -78,3 +81,4 @@ backend/
 ├── manage.py
 ├── pytest.ini
 └── requirements.txt
+```

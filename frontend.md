@@ -1,3 +1,6 @@
+# Frontend File Structure
+
+```
 frontend/
 ├── components.json
 ├── eslint.config.js
@@ -55,3 +58,4 @@ frontend/
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+```
